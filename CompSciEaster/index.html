@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easter</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://pillarsofpossibility.web.app/css/styles.css">
+    <link rel="stylesheet" href="https://pillarsofpossibility.web.app/css/carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+</head>
+<body onscroll="scrollFunction()">
+    <div class="banner">
+        This site utilises some css and js used and hosted by pillarsofpossibility.web.app however I wrote it all. I'm happy to show the code if you'd like to see it. <br>
+        Also the carousel seems to flash sometimes, if you know what's going on there please let me know, I've spent quite a bit of time on google.
+        <!--Requirements <br>
+        3 pages - 4 pages; Home, 3 Recipes <br>
+        HTML, CSS and JS - Yep <br>
+        JS Events - Header uses onscroll for header background-->
+    </div>
+    <div id="header">
+        <header class="header" id="headercontainer">
+            <div class="headercontent">
+                <a href="/"><div class="name">Easter</div> </a>
+            </div>
+        </header>
+    </div>
+    <div class="easteroverlay">Easter</div>
+
+    <div style="overflow: hidden;">
+        <div style="overflow: hidden; background-image: url(https://i.pinimg.com/originals/23/be/43/23be43354df543e42c3878eb76aa037f.jpg); background-size: cover; background-position: center;">
+            <div style="height: 100vh;"></div>
+            <svg id="visual" style="display:block; transform:translate(0,2px) scale(1.1, 1)" viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 52L50 53.7C100 55.3 200 58.7 300 64.8C400 71 500 80 600 81.8C700 83.7 800 78.3 850 75.7L900 73L900 100L850 100C800 101 700 100 600 100C500 100 400 100 300 100C200 100 100 100 50 100L0 100Z" fill="#0a0a0a"></path></svg>
+        </div>
+    </div>
+    <div class="" style="overflow: hidden; background-color: black;">
+        <div class="headerspacer"></div>
+        <div class="content" style="height: max-content; min-height: 0;">
+            <section></section>
+            <div id="featured" class="slide2">
+                <div class="dotnav">
+                    <ul class="dotnav-items">
+                        <li>
+                            <a onclick="featuredslide(0)" id="featured-item-0-trigger" class="dotnav-item current"></a>
+                        </li>
+                        <li>
+                            <a onclick="featuredslide(1)" id="featured-item-1-trigger" class="dotnav-item"></a>
+                        </li>
+                        <li>
+                            <a onclick="featuredslide(2)" id="featured-item-2-trigger" class="dotnav-item"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="featured3">
+                    <ul class="featured-items" id="featuredslide">
+                        
+                        <li class="featured-item" id="featured-0">
+                            <a href="/recipes/1/">
+                                <div class="sixteenbynine">
+                                    <div class="sixteenbyninecontent">
+                                        <div class="featured-item-content" style="background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easter-egg-brownies-70c3441.jpg?quality=100);">
+                                            <div class="featured-item-title">
+                                                Easter Egg Brownies
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="featured-item" id="featured-1">
+                            <a href="/recipes/2/">
+                                <div class="sixteenbynine">
+                                    <div class="sixteenbyninecontent">
+                                        <div class="featured-item-content" style="background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easter-egg-cookies-88ee62a.jpg?quality=100);">
+                                            <div class="featured-item-title">
+                                                Easter Egg Cookies
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="featured-item" id="featured-2">
+                            <a href="/recipes/3/">
+                                <div class="sixteenbynine">
+                                    <div class="sixteenbyninecontent">
+                                        <div class="featured-item-content" style="background-position: top;background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2021/02/Easter-egg-hot-chocolate-06c2cbd.jpg?quality=100);">
+                                            <div class="featured-item-title">
+                                                Easter Hot Chocolate
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="paddlenav">
+                    <div class="paddlenavarrow inactive" id="paddlenavprev" onclick="paddlenav(0)">
+                        <div class="fa fa-angle-left" style="padding: 9px; padding-left: 12px; font-weight: 900; font-size: 20px;"></div>
+                    </div>
+                    <div class="paddlenavarrow" id="paddlenavnext" onclick="paddlenav(1)">
+                        <div class="fa fa-angle-right" style="padding: 9px; padding-left: 15px; font-weight: 900; font-size: 20px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerspacer"></div>
+    </div>
+
+    <div style="overflow: hidden; ">
+        <svg id="visual" style="display:block; transform:translate(0,-2px) scale(1.1,1)" viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 46L50 44.3C100 42.7 200 39.3 300 33.2C400 27 500 18 600 16.2C700 14.3 800 19.7 850 22.3L900 25L900 0L850 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0L0 0Z" fill="#0a0a0a"></path></svg>
+        <div class="headerspacer"></div>
+
+        <div class="content">
+            <div class="sectioncontainer">
+                <h2>Find the eggs</h2>
+                <p class="indent">Find the 6 eggs hidden in the grass by hovering your mouse</p>
+                <p class="indent note">This doesn't work how I want it to yet, I'm going to continue fiddling around with it though and I'll remove this message once it works. I also want to add scores</p>
+                <div class="findeggscontainer">
+                    <div class="grass">
+                        <div class="egg" onmouseover="this.classList.add('eggactive')">
+                        </div>
+                        <div class="egg" onmouseover="this.classList.add('eggactive')">
+                        </div>
+                        <div class="egg" onmouseover="this.classList.add('eggactive')">
+                        </div>
+                        <div class="egg" onmouseover="this.classList.add('eggactive')">
+                        </div>
+                        <div class="egg" onmouseover="this.classList.add('eggactive')">
+                        </div>
+                        <div class="egg" onmouseover="this.classList.add('eggactive')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2021 Sam Reed - Recipes from BBC Goodfood
+    </div>
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>
